@@ -4,14 +4,37 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Pasi Rantanen">
+  <meta name="description" content="Portfolio of Pasi Rantanen - Developer and IT specialist">
 
   <title>Pasi Rantanen | Portfolio</title>
 
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Mobile -->
+  <meta name="theme-color" content="#111">
+
 </head>
 
 <body>
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle("dark");
+    
+      const mode = document.body.classList.contains("dark") ? "dark" : "light";
+      localStorage.setItem("theme", mode);
+    }
+    
+    // säilytä valinta
+    (function () {
+      const saved = localStorage.getItem("theme");
+      if (saved === "dark") {
+        document.body.classList.add("dark");
+      }
+    })();
+    </script>
 
 <header class="header">
   <div class="name-box">
@@ -22,6 +45,9 @@
     <span>{ Software Developer }</span>
     <span>{ Web designer }</span>
     <span>{ IT support }</span>
+
+    <button class="theme-toggle" onclick="toggleTheme()">Dark mode</button>
+
   </div>
 </header>
 
@@ -29,7 +55,7 @@
 
   <!-- Sidebar -->
   <aside class="sidebar">
-    <img src="img/profile.png" alt="Profile image" class="profile-img">
+    <img src="img/profile.png" alt="Profile image" class="profile-img" loading="lazy">
 
     <section class="section">
       <h2>PROFILE</h2>
@@ -108,13 +134,25 @@
           <h3>Relocation in Finland</h3>
           <p>Another small website for association</p>
         </div>
+
+        <div class="project-card">
+          <img src="img/taipale.png" alt="Projektikuva" title="Taipale">
+          <h3>Leirikeskus Taipale</h3>
+          <p>A fictional website project.</p>
+        </div>
+
+        <div class="project-card">
+          <img src="img/bootstrap.png" alt="Projektikuva" title="Bootstrap sivu">
+          <h3>Bootstrap harjoitus</h3>
+          <p>A fictional website project.</p>
+        </div>
       </div>
     </section>
 
   </div>
 
   <!-- Certificates -->
-  <section class="section">
+  <section class="section sidebar">
     <h2>Certificate</h2>
     <div class="references">
       <div class="ref">
@@ -156,7 +194,7 @@
   </span>
 
   <p>&copy; Pasi Rantanen 2026</p>
-  <a href="mailto:pasi.rantanen@edu.tampere.fi">Contact me</a>
+  <a href="mailto:pasi.rantanen@gmail.com">Contact me</a>
 </footer>
 
 </body>
