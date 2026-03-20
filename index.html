@@ -3,30 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta author="Pasi Rantanen">
+  <meta name="author" content="Pasi Rantanen">
 
   <title>Pasi Rantanen | Portfolio</title>
+
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-
-  
 <header class="header">
-    <div class="name-box"> <h1>Pasi Rantanen</h1> </div>
-    <div class="header-bar">
-      <span>{ Software Developer }</span>
-      <span>{ Web designer }</span>
-      <span>{ IT support }</span>
-    </div>
-</header>
+  <div class="name-box">
+    <h1>Pasi Rantanen</h1>
+  </div>
 
+  <div class="header-bar">
+    <span>{ Software Developer }</span>
+    <span>{ Web designer }</span>
+    <span>{ IT support }</span>
+  </div>
+</header>
 
 <main class="container">
 
+  <!-- Sidebar -->
   <aside class="sidebar">
-    <img src="img/profile.png" alt=" " class="profile-img">
+    <img src="img/profile.png" alt="Profile image" class="profile-img">
 
     <section class="section">
       <h2>PROFILE</h2>
@@ -35,112 +38,126 @@
 
     <section class="section">
       <h2>SKILLS SUMMARY</h2>
-      <div class="skills"> HTML - CSS - JavaScript - Python
-        <!-- <div class="skill"><span>öaenböabniaen</span><div class="borderline full"></div></div>
-        <div class="skill"><span>aneörpnbaeprinäb</span><div class="borderline full"></div></div> -->
+      <div class="skills">
+        HTML - CSS - JavaScript - Python - PHP - SQL - Git
       </div>
     </section>
 
     <section class="section">
       <h2>LANGUAGE</h2>
-        <ul class="lang-list">
-          <li>English</li>
-          <li>Finnish</li>
-        </ul>
+      <ul class="lang-list">
+        <li>English</li>
+        <li>Finnish</li>
+      </ul>
     </section>
 
     <section class="section">
       <h2>Other list</h2>
-        <ul class="lang-list">
-          <li>Item</li>
-          <li>Item</li>
-          <li>Item</li>
-        </ul>
+      <ul class="lang-list">
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+      </ul>
     </section>
-    
   </aside>
 
-<!-- Main content -->
-<div class="maincontent">
+  <!-- Main content -->
+  <div class="maincontent">
 
     <h2 class="intro">HI!</h2>
-    <p>This is a sketch of my portfolio. I have some previous experience from "coding" and tech. Not much of content to add here yet so probably this becomes a project to continue over time.</p><br><br>
+    <p>This is a sketch of my portfolio. I have some previous experience from "coding" and tech. Not much of content to add here yet so probably this becomes a project to continue over time.</p>
 
-  <!-- Education 
-  <section class="section">
-    <h2>EDUCATION</h2>
-      <ul class="timeline">
-        <li><strong>2017-2021</strong> — </li>
-        <li><strong>2021-2024</strong> — </li>
-      </ul>
-  </section>
--->
-
-  <section class="section">
-    <h2>WORK EXPERIENCE</h2>
+    <section class="section">
+      <h2>WORK EXPERIENCE</h2>
       <ul class="timeline">
         <li>
           <strong>2021-2022</strong> — Otsikko
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </li>
         <li>
-        <strong>2022-2023</strong> — Otsikko
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <strong>2022-2023</strong> — Otsikko
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </li>
         <li>
           <strong>2024-Present</strong> — Otsikko
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          </li>
+        </li>
       </ul>
-  </section>
+    </section>
 
+    <section class="section">
+      <h2>PROJECTS</h2>
+
+      <p>A few main projects I've done over the years. My job was design, developement and administration. The frame is build inside of a table element - yes, that old they are</p>
+
+      <div class="projects">
+        <div class="project-card">
+          <img src="img/tjk.jpg" alt="Projektikuva" title="Tampereen Jalkapalloklubi">
+          <h3>TJK</h3>
+          <p>Website for football club. I used .php and .shtml and did all the graphics</p>
+        </div>
+
+        <div class="project-card">
+          <img src="img/kultaniitty.jpg" alt="Projektikuva" title="Kultaniitty">
+          <h3>Kultaniitty r.y.</h3>
+          <p>A small website for the care home with html and css</p>
+        </div>
+
+        <div class="project-card">
+          <img src="img/relocation.jpg" alt="Projektikuva" title="Assisted Relocation in Finland">
+          <h3>Relocation in Finland</h3>
+          <p>Another small website for association</p>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Certificates -->
   <section class="section">
-    <h2>PROJECTS</h2>
-      <ul class="timeline">
-        <p>A few main projects I've done over the years. My job was design, developement and administration. The frame is build inside of a table element - yes, that old they are</p>
-      <section class="projects"><!-- Kortti elementti -->
-        <div class="project-card">
-            <img src="img/tjk.jpg" alt="Projektikuva" title="Tampereen Jalkapalloklubi">
-            <h3>TJK</h3>
-            <p>Website for football club. I used .php and .shtml and did all the graphics</p>
-        </div>
-        <div class="project-card">
-            <img src="img/kultaniitty.jpg" alt="Projektikuva" title="Kultaniitty">
-            <h3>Kultaniitty r.y.</h3>
-            <p>A small website for the care home with html and css</p>
-        </div>
-        <div class="project-card">
-            <img src="img/relocation.jpg" alt="Projektikuva" title="Assisted Relocation in Finland">
-            <h3>Relocation in Finland</h3>
-            <p>Another small website for association</p>
-        </div>
-      </section>
+    <h2>Certificate</h2>
+    <div class="references">
+      <div class="ref">
+        <a href="https://www.credly.com/badges/c0f0abca-0426-4056-a71d-303d388f0812/public_url">
+          <img src="img/introduction-to-cybersecurity.png" alt="Cybersecurity certificate">
+        </a>
+      </div>
 
+      <div class="ref">
+        <a href="https://www.credly.com/badges/75a52cc8-e574-4df6-8f5d-e72c1e64c394/public_url">
+          <img src="img/linux-essentials.png" alt="Linux certificate">
+        </a>
+      </div>
+
+      <div class="ref">
+        <a href="https://www.credly.com/badges/28855f8d-9ba9-4bd1-b4c8-e8d6f3e86770/public_url">
+          <img src="img/it-customer-support-basics.png" alt="IT support certificate">
+        </a>
+      </div>
+    </div>
   </section>
-
-</div>
-
-      <section class="section">
-        <h2>Certificate</h2>
-        <div class="references">
-          <div class="ref"><a href="https://www.credly.com/badges/c0f0abca-0426-4056-a71d-303d388f0812/public_url"> <img src="img/introduction-to-cybersecurity.png" alt=""> </a> </div>
-          <div class="ref"><a href="https://www.credly.com/badges/75a52cc8-e574-4df6-8f5d-e72c1e64c394/public_url"> <img src="img/linux-essentials.png" alt=""> </a> </div>
-          <div class="ref"><a href="https://www.credly.com/badges/28855f8d-9ba9-4bd1-b4c8-e8d6f3e86770/public_url"> <img src="img/it-customer-support-basics.png" alt=""> </a> </div>
-        </div>
-      </section>
 
 </main>
 
-<div class="footer">
+<footer class="footer">
   <span class="some-icons">
-    <a href="https://www.facebook.com/rantanen.pasi/" target="_blank" rel="noopener noreferrer"><img src="icons/fb_icon.png" alt="" title="facebook"></a>
-    <a href="https://www.linkedin.com/in/pasi-rantanen-aa0148231/" target="_blank" rel="noopener noreferrer"><img src="icons/li_icon.png" alt="" title="linkedin"></a>
-    <a href="https://www.instagram.com/pasirok" target="_blank" rel="noopener noreferrer"><img src="icons/ig_icon.png" alt="" title="instagram"></a>
-    <a href="https://wa.me/+358405895766?text=Hello%20there!" target="_blank" rel="noopener noreferrer"><img src="icons/wa_icon.png" alt="" title="whatsapp"></a>  </span>
-  &copy; Pasi Rantanen 2026
-  <a href="mailto:pasi.rantanen@edu.tampere.fi">Contact me</a>
-</div>
+    <a href="https://www.facebook.com/rantanen.pasi/" target="_blank" rel="noopener noreferrer">
+      <img src="icons/fb_icon.png" alt="Facebook" title="facebook">
+    </a>
+    <a href="https://www.linkedin.com/in/pasi-rantanen-aa0148231/" target="_blank" rel="noopener noreferrer">
+      <img src="icons/li_icon.png" alt="LinkedIn" title="linkedin">
+    </a>
+    <a href="https://www.instagram.com/pasirok" target="_blank" rel="noopener noreferrer">
+      <img src="icons/ig_icon.png" alt="Instagram" title="instagram">
+    </a>
+    <a href="https://wa.me/+358405895766?text=Hello%20there!" target="_blank" rel="noopener noreferrer">
+      <img src="icons/wa_icon.png" alt="WhatsApp" title="whatsapp">
+    </a>
+  </span>
 
+  <p>&copy; Pasi Rantanen 2026</p>
+  <a href="mailto:pasi.rantanen@edu.tampere.fi">Contact me</a>
+</footer>
 
 </body>
 </html>
