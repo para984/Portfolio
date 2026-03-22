@@ -146,6 +146,8 @@ body.dark .header-bar {
   line-height: 1.5;
   color: var(--text);
   margin-bottom: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 /* === SECTIONS === */
@@ -228,6 +230,12 @@ body.dark .header-bar {
   object-fit: cover;
   border-radius: 6px;
   margin-bottom: 8px;
+  filter: grayscale(85%) contrast(0.95);
+  transition: filter 0.35s ease;
+}
+
+.project-card:hover img {
+  filter: none;
 }
 
 .project-card h3 {
