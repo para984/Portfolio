@@ -20,23 +20,26 @@
 </head>
 
 <body>
-  <script>
-    function toggleTheme() {
-      document.body.classList.toggle("dark");
-    
-      const mode = document.body.classList.contains("dark") ? "dark" : "light";
-      localStorage.setItem("theme", mode);
-    }
-    
-    // säilytä valinta
-    (function () {
-      const saved = localStorage.getItem("theme");
-      if (saved === "dark") {
-        document.body.classList.add("dark");
-      }
-    })();
-    </script>
 
+  <button class="theme-toggle" onclick="toggleTheme()">Dark mode</button>
+
+<script>
+  function toggleTheme() {
+    document.body.classList.toggle("dark");
+    const mode = document.body.classList.contains("dark") ? "dark" : "light";
+    localStorage.setItem("theme", mode);
+  }
+    
+// säilytä valinta
+  (function () {
+    const saved = localStorage.getItem("theme");
+    if (saved === "dark") {
+    document.body.classList.add("dark");
+    }
+  })();
+</script>
+
+<!-- ##### Header ##### -->
 <header class="header">
   <div class="name-box">
     <h1>Pasi Rantanen</h1>
@@ -46,15 +49,13 @@
     <span>{ Software Developer }</span>
     <span>{ Web designer }</span>
     <span>{ IT support }</span>
-
-    <button class="theme-toggle" onclick="toggleTheme()">Dark mode</button>
-
   </div>
 </header>
 
+
 <main class="container">
 
-  <!-- Sidebar -->
+<!-- ##### Sidebar ##### -->
   <aside class="sidebar">
     <img src="img/profile_edges.PNG" alt="Profile image" class="profile-img" loading="lazy">
 
@@ -73,16 +74,14 @@ For convenience's sake, ever!”</p>
 
     <section class="section">
       <h2>SKILLS SUMMARY</h2>
-      <div class="skills">
-        HTML - CSS - JavaScript - Python - PHP - SQL - Git
-      </div>
+      <div class="skills">HTML / CSS - JavaScript - Python - PHP - SQL - Git</div>
     </section>
 
     <section class="section">
-      <h2>LANGUAGE</h2>
+      <h2>EDUCATION</h2>
       <ul class="lang-list">
-        <li>English</li>
-        <li>Finnish</li>
+        <li>> Bachelor's degree in information and communication technology</li>
+        <li>> Self-learned</li>
       </ul>
     </section>
 
@@ -96,7 +95,7 @@ For convenience's sake, ever!”</p>
     </section>
   </aside>
 
-  <!-- Main content -->
+<!-- ##### Main content - Middle section ##### -->
   <div class="maincontent">
 
     <h2 class="intro">HI!</h2>
@@ -136,34 +135,44 @@ I challenge you to all out fucking life</p></span>
       <p>A few main projects I've done over the years. My job was design, developement and administration. The frame is build inside of a table element - yes, that old they are</p>
 
       <div class="projects">
-        <div class="project-card">
-          <img src="img/tjk.jpg" alt="Projektikuva" title="Tampereen Jalkapalloklubi">
+        <div class="project-card" 
+          data-title="TJK" data-text="This project included everything from design to developement and hosting. Used .php and .shtml and did all the graphics"
+          data-img="img/tjk.jpg">
+          <img src="img/tjk.jpg" alt="Projektikuva" title="Tampereen Jalkapalloklubi" loading="lazy">
           <h3>TJK</h3>
-          <p>Website for football club. I used .php and .shtml and did all the graphics</p>
+          <p>Website for the football club</p><div class="align-right">2006</div>
         </div>
 
-        <div class="project-card">
-          <img src="img/kultaniitty.jpg" alt="Projektikuva" title="Kultaniitty">
+        <div class="project-card" 
+          data-title="Kultaniitty" data-text="A small website for the care home with html and css"
+          data-img="img/kultaniitty.jpg">
+          <img src="img/kultaniitty.jpg" alt="Projektikuva" title="Kultaniitty" loading="lazy">
           <h3>Kultaniitty r.y.</h3>
-          <p>A small website for the care home with html and css</p>
+          <p>A small website for the care home with html and css</p><div class="align-right">2006</div>
         </div>
 
-        <div class="project-card">
-          <img src="img/relocation.jpg" alt="Projektikuva" title="Assisted Relocation in Finland">
+        <div class="project-card" 
+          data-title="Assisted Relocation in Finland" data-text="Another small website for association"
+          data-img="img/relocation.jpg">
+          <img src="img/relocation.jpg" alt="Projektikuva" title="Assisted Relocation in Finland" loading="lazy">
           <h3>Relocation in Finland</h3>
-          <p>Another small website for association</p>
+          <p>Another small website for association</p><div class="align-right">2007</div>
         </div>
 
-        <div class="project-card">
-          <img src="img/taipale.png" alt="Projektikuva" title="Taipale">
+        <div class="project-card" 
+          data-title="Taipale" data-text="A small website for the care home with html and css"
+          data-img="img/taipale.png">
+          <img src="img/taipale.png" alt="Projektikuva" title="Taipale" loading="lazy">
           <h3>Leirikeskus Taipale</h3>
-          <p>A fictional website project.</p>
+          <p>A fictional website project.</p><div class="align-right">2025</div>
         </div>
 
-        <div class="project-card">
-          <img src="img/bootstrap.png" alt="Projektikuva" title="Bootstrap sivu">
+        <div class="project-card" 
+          data-title="Bootstrap sivu" data-text="A small website for the care home with html and css"
+          data-img="img/bootstrap.png">
+          <img src="img/bootstrap.png" alt="Projektikuva" title="Bootstrap sivu" loading="lazy">
           <h3>Bootstrap harjoitus</h3>
-          <p>A fictional website project.</p>
+          <p>A fictional website project.</p><div class="align-right">2025</div>
         </div>
       </div>
     </section>
@@ -175,20 +184,20 @@ I challenge you to all out fucking life</p></span>
     <h2>Certificate</h2>
     <div class="references">
       <div class="ref">
-        <a href="https://www.credly.com/badges/c0f0abca-0426-4056-a71d-303d388f0812/public_url">
-          <img src="img/introduction-to-cybersecurity.png" alt="Cybersecurity certificate">
+        <a href="https://www.credly.com/badges/c0f0abca-0426-4056-a71d-303d388f0812/public_url" target="_blank" rel="noopener noreferrer">
+          <img src="img/introduction-to-cybersecurity.png" alt="Cybersecurity certificate" title="Cybersecurity certificate" loading="lazy">
         </a>
       </div>
 
       <div class="ref">
-        <a href="https://www.credly.com/badges/75a52cc8-e574-4df6-8f5d-e72c1e64c394/public_url">
-          <img src="img/linux-essentials.png" alt="Linux certificate">
+        <a href="https://www.credly.com/badges/75a52cc8-e574-4df6-8f5d-e72c1e64c394/public_url" target="_blank" rel="noopener noreferrer">
+          <img src="img/linux-essentials.png" alt="Linux certificate" title="Linux certificate" loading="lazy">
         </a>
       </div>
 
       <div class="ref">
-        <a href="https://www.credly.com/badges/28855f8d-9ba9-4bd1-b4c8-e8d6f3e86770/public_url">
-          <img src="img/it-customer-support-basics.png" alt="IT support certificate">
+        <a href="https://www.credly.com/badges/28855f8d-9ba9-4bd1-b4c8-e8d6f3e86770/public_url" target="_blank" rel="noopener noreferrer">
+          <img src="img/it-customer-support-basics.png" alt="IT support certificate" title="IT support certificate" loading="lazy">
         </a>
       </div>
     </div>
@@ -199,22 +208,42 @@ I challenge you to all out fucking life</p></span>
 <footer class="footer">
   <span class="some-icons">
     <a href="https://www.facebook.com/rantanen.pasi/" target="_blank" rel="noopener noreferrer">
-      <img src="icons/fb_icon.png" alt="Facebook" title="facebook">
+      <img src="icons/fb_icon.png" alt="Facebook" title="Facebook">
     </a>
     <a href="https://www.linkedin.com/in/pasi-rantanen-aa0148231/" target="_blank" rel="noopener noreferrer">
-      <img src="icons/li_icon.png" alt="LinkedIn" title="linkedin">
+      <img src="icons/li_icon.png" alt="LinkedIn" title="LinkedIn">
+    </a>
+    <a href="https://github.com/para984" target="_blank" rel="noopener noreferrer">
+      <img src="icons/github.png" alt="Github" title="Github">
     </a>
     <a href="https://www.instagram.com/pasirok" target="_blank" rel="noopener noreferrer">
-      <img src="icons/ig_icon.png" alt="Instagram" title="instagram">
+      <img src="icons/ig_icon.png" alt="Instagram" title="Instagram">
     </a>
     <a href="https://wa.me/+358405895766?text=Hello%20there!" target="_blank" rel="noopener noreferrer">
-      <img src="icons/wa_icon.png" alt="WhatsApp" title="whatsapp">
+      <img src="icons/wa_icon.png" alt="WhatsApp" title="WhatsApp">
     </a>
   </span>
 
   <p>&copy; Pasi Rantanen 2026</p>
   <a href="mailto:pasi.rantanen@gmail.com">Contact me</a>
 </footer>
+
+
+
+<!-- PROJECT MODAL -->
+<div id="projectModal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="modalTitle">
+  <div class="modal-overlay" data-close></div>
+
+  <div class="modal-content">
+    <button class="modal-close" aria-label="Close" data-close>&times;</button>
+
+    <img id="modalImage" src="" alt="">
+    <h3 id="modalTitle"></h3>
+    <p id="modalText"></p>
+  </div>
+</div>
+
+<script src="modal.js"></script>
 
 </body>
 </html>
