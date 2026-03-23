@@ -9,6 +9,7 @@
   <title>Pasi Rantanen | Portfolio</title>
 
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="effect.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Averia+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
   <!-- Performance -->
@@ -20,8 +21,6 @@
 </head>
 
 <body>
-
-  <button class="theme-toggle" onclick="toggleTheme()">Dark mode</button>
 
 <script>
   function toggleTheme() {
@@ -38,6 +37,10 @@
     }
   })();
 </script>
+
+<button class="theme-toggle" onclick="toggleTheme()">Dark mode</button>
+
+
 
 <!-- ##### Header ##### -->
 <header class="header">
@@ -61,15 +64,9 @@
 
     <section class="section">
       <h2>PROFILE</h2>
-<p>We are gathered here today to get it right
-Repeat after me:
-“I will not celebrate mediocrity
-I will not worship empty shells
-I will not listen to worthless noises
-I will not subject myself to selected predictable choices
-My time, my attention
-My quality should not be bought and sold
-For convenience's sake, ever!”</p>
+      <p>I am an aspiring IT professional with a strong interest in software development and technology. Currently expanding my skills through studies, I am focused on building practical knowledge and gaining hands-on experience in modern development tools and environments.</p>
+      <br>
+      <p>With a motivated and disciplined approach to learning, I am continuously developing my technical abilities and problem-solving skills. My goal is to transition into the IT field and contribute effectively as part of a development team after completing my studies.</p>
     </section>
 
     <section class="section">
@@ -86,13 +83,17 @@ For convenience's sake, ever!”</p>
     </section>
 
     <section class="section">
-      <h2>Other list</h2>
-      <ul class="lang-list">
-        <li>Item</li>
-        <li>Item</li>
-        <li>Item</li>
-      </ul>
+      <div class="sidebar-animation">
+        <pre class="code-lines">
+      <span>&lt;div&gt;</span>
+      <span>  function dev() {</span>
+      <span>    return "code";</span>
+      <span>  }</span>
+      <span>&lt;/div&gt;</span>
+        </pre>
+      </div>
     </section>
+  
   </aside>
 
 <!-- ##### Main content - Middle section ##### -->
@@ -100,31 +101,22 @@ For convenience's sake, ever!”</p>
 
     <h2 class="intro">HI!</h2>
     <span class="intro-text">
-<p>Old does not mean dead
-New does not mean best
-No hard feelings
-I'm tired of being right
-About everything I've said
-Yours does not mean mine
-Kill does not mean die
-We are not your kind
-No excuses
-I challenge you to all out fucking life</p></span>
+      <p>Motivated IT student focused on software development and continuous learning. Building practical skills through hands-on projects and real-world problem solving.</p></span>
 
     <section class="section">
       <h2>WORK EXPERIENCE</h2>
       <ul class="timeline">
         <li>
-          <strong>2021-2022</strong> — Otsikko
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <strong>2026-present</strong> — Your company?
+          <p> Place to insert future job in your complany </p>
         </li>
         <li>
-          <strong>2022-2023</strong> — Otsikko
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <strong>2008-2025</strong> — Construction industry
+          <p>incididunt ut labore et dolore magna aliqua.</p>
         </li>
         <li>
-          <strong>2024-Present</strong> — Otsikko
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <strong>2001-2007</strong> — Freelance projects
+          <p>Self-learning and website projects as freelance. </p>
         </li>
       </ul>
     </section>
@@ -225,7 +217,7 @@ I challenge you to all out fucking life</p></span>
   </span>
 
   <p>&copy; Pasi Rantanen 2026</p>
-  <a href="mailto:pasi.rantanen@gmail.com">Contact me</a>
+  <a href="mailto:pasi.rantanen@edu.tampere.fi" class="contact-btn">Contact Me</a>
 </footer>
 
 
