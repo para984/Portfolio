@@ -10,6 +10,9 @@
   --muted: #666;
   --border: #bebbb6;
 
+  --header1: #d8d3ca;
+  --header2: #fdfcf9;
+
   --shadow-soft: 0 4px 10px rgba(0,0,0,0.15);
   --shadow-strong: 0 10px 25px rgba(0,0,0,0.25);
 }
@@ -45,32 +48,14 @@ body {
 
 /* === HEADER UPGRADE === */
 .header {
-  position: relative;
-  overflow: hidden;
-  padding: 40px 20px;
+  padding: 30px 20px;
   margin-bottom: 20px;
   border-radius: 10px;
   border: 3px solid var(--border);
-
-  background: linear-gradient(
-    135deg,
-    var(--paper),
-    var(--element_bg)
-  );
+  background: linear-gradient(135deg, var(--header1), var(--header2) );
+/*background: #cfcac2;*/
 
   box-shadow: var(--shadow-soft);
-}
-
-.header::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: #cfcac2;
-  /* background-image: linear-gradient(rgba(0,0,0,0.05) 1px, transparent 1px),
-                    linear-gradient(90deg, rgba(0,0,0,0.05) 1px, transparent 1px);
-  background-size: 25px 25px; */
-  opacity: 0.4;
-  pointer-events: none;
 }
 
 /* header sisältö */
@@ -235,7 +220,7 @@ body {
 /* === PROJECTS === */
 .projects {
   display: grid;
-  gap: 1rem;
+  gap: 2rem;
   margin-top: 15px;
 }
 
@@ -313,45 +298,19 @@ body {
 /* === FOOTER UPGRADE === */
 .footer {
   position: relative;
+  margin-bottom: 10px;
   overflow: hidden;
   padding: 15px;
-  margin-top: 20px;
-
   border: 3px solid var(--border);
   border-radius: 8px;
-
-  background: linear-gradient(
-    135deg,
-    var(--paper),
-    var(--element_bg)
-  );
-
+  background: linear-gradient(135deg, var(--header2), var(--header1), var(--header1) );
   box-shadow: var(--shadow-soft);
 
   display: flex;
   flex-direction: column;
   gap: 12px;
-  text-align: center;
 }
 
-/* sama grid-efekti kuin headerissa */
-.footer::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: #cfcac2;
-  opacity: 0.4;
-  pointer-events: none;
-}
-
-/* kevyt korostus */
-.footer::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(circle at 70% 70%, rgba(163,165,75,0.12), transparent 60%);
-  pointer-events: none;
-}
 
 /* sisältö päälle */
 .footer > * {
@@ -375,43 +334,27 @@ body {
   display: inline-block;
   padding: 8px 14px;
   background: transparent;
-  color: var(--light);
-  border: 2px solid var(--light);
+  color: var(--text);
+  border: 2px solid var(--paper);
   border-radius: 6px;
   text-decoration: none;
   font-size: 0.8rem;
   letter-spacing: 1px;
   text-transform: uppercase;
-
   transition: all 0.25s ease;
+  animation: pulse 3s infinite;
 }
 
-/* hover efekti */
 .contact-btn:hover {
-  background: var(--light);
+  background: var(--paper);
   color: var(--accent);
   transform: translateY(-2px);
 }
 
-/* pieni “pulse” efekti huomioherättämiseen */
-.contact-btn {
-  animation: pulse 3s infinite;
-}
-
 @keyframes pulse {
-  0% { box-shadow: 0 0 0 0 rgba(255,255,255,0.4); }
+  0% { box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.5); }
   70% { box-shadow: 0 0 0 8px rgba(255,255,255,0); }
   100% { box-shadow: 0 0 0 0 rgba(255,255,255,0); }
-}
-
-
-/* Desktop footer */
-@media (min-width: 768px) {
-  .footer {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
 }
 
 .some-icons a {
@@ -437,19 +380,13 @@ body {
   opacity: 1;
 }
 
-
-
-  
 /* === PERFORMANCE === */
 img {
   max-width: 100%;
   display: block;
 }
 
-
-
-
-  /* === MODAL === */
+/* === MODAL === */
 .modal {
   position: fixed;
   inset: 0;
@@ -465,7 +402,7 @@ img {
   position: absolute;
   inset: 0;
   background: rgba(0,0,0,0.6);
-  -webkit-backdrop-filter: blur(3px); /* Safari ja iOS */
+  -webkit-backdrop-filter: blur(3px);
   backdrop-filter: blur(3px);
 }
 

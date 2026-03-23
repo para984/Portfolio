@@ -4,6 +4,7 @@ body.dark {
     --paper: #1e1e1e;
     --card: #222;
     --element_bg: #1a1a1a;
+    --alt_bg: #333;
     --text: #cacaca;
     --accent: #a3a54b;
     --muted: #aaa;
@@ -11,14 +12,23 @@ body.dark {
   }
   
   /* komponenttikohtaiset erot tarvittaessa */
+  body.dark .header {
+  border: 3px solid var(--border);
+  background: linear-gradient(
+    135deg,
+    var(--paper),
+    var(--element_bg)
+  );
+  box-shadow: var(--shadow-soft);
+}
   body.dark .name-box h1 {
     background: var(--card);
     color: var(--text);
   }
-  
-  body.dark .header-bar {
+  body.dark .project-card {
     background: var(--card);
     color: var(--text);
+    box-shadow: var(--shadow-soft);
   }
 
   body.dark .header {
