@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#111">
   <meta name="author" content="Pasi Rantanen">
   <meta name="description" content="Portfolio of Pasi Rantanen - Developer and IT specialist">
 
@@ -16,8 +17,6 @@
   <!-- Performance -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <!-- Mobile -->
-  <meta name="theme-color" content="#111">
 
 <link rel="icon" href="icons/favicon.svg" type="image/svg+xml">
 <link rel="shortcut icon" href="icons/favicon.svg" type="image/svg+xml">
@@ -42,7 +41,7 @@
   })();
 </script>
 
-<button class="theme-toggle" onclick="toggleTheme()">Dark mode</button>
+<button type="button" class="theme-toggle" onclick="toggleTheme()">Dark mode</button>
 
 
 
@@ -56,9 +55,10 @@
     </p>
 
     <div class="header-tags">
-      <span>PHP</span>
-      <span>JavaScript</span>
-      <span>SQL</span>
+      <span>Web Design</span>
+      <span>Debugging</span>
+      <span>Customer service</span>
+      <span>Project planning</span>
       <span>Web Development</span>
     </div>
   </div>
@@ -80,14 +80,14 @@
 
     <section class="section">
       <h2>SKILLS SUMMARY</h2>
-      <div class="skills">HTML / CSS - JavaScript - Python - PHP - SQL - Git</div>
+      <div class="skills">HTML/CSS - JavaScript - Python - PHP - SQL - Git - Bootstrap</div>
     </section>
 
     <section class="section">
       <h2>EDUCATION</h2>
       <ul class="lang-list">
-        <li>> Bachelor's degree in information and communication technology</li>
-        <li>> Self-learned</li>
+        <li>Bachelor's degree in information and communication technology</li>
+        <li>Self-learned ICT</li>
       </ul>
     </section>
 
@@ -117,27 +117,26 @@
       <ul class="timeline">
         <li>
           <strong>2026-present</strong> — Your company here?
-          <p> Place to insert future job in your complany </p>
+          <p>Future job description in your company</p>
         </li>
         <li>
           <strong>2008-2025</strong> — Construction industry
-          <p>incididunt ut labore et dolore magna aliqua.</p>
+          <p>Career in construction sites as a painter and supervisor</p>
         </li>
         <li>
           <strong>2001-2007</strong> — Freelance projects
-          <p>Self-learning and website projects as freelance. </p>
+          <p>Self-learning coding and website projects as freelance</p>
         </li>
       </ul>
     </section>
 
     <section class="section">
       <h2>PROJECTS</h2>
-
-      <p>A few main projects I've done over the years. My job was design, developement and administration. The frame is build inside of a table element - yes, that old they are</p>
+      <p>A few main projects I've done over the years. My job was design, developement and administration. More codework can be found from Github.</p>
 
       <div class="projects">
         <div class="project-card" 
-          data-title="TJK" data-text="This project included everything from design to developement and hosting. Used .php and .shtml and did all the graphics"
+          data-title="Tampereen Jalkapalloklubi" data-text="This project included everything from design to developement. HTML, CSS and PHP were used to create the website."
           data-img="img/tjk.jpg">
           <img src="img/tjk.jpg" alt="Projektikuva" title="Tampereen Jalkapalloklubi" loading="lazy">
           <h3>TJK</h3>
@@ -145,23 +144,23 @@
         </div>
 
         <div class="project-card" 
-          data-title="Kultaniitty" data-text="A small website for the care home with html and css"
+          data-title="Kultaniitty" data-text="A small website for the care home with html and css. This project was one of my first and it was a great learning experience to create a functional website for a real client."
           data-img="img/kultaniitty.jpg">
           <img src="img/kultaniitty.jpg" alt="Projektikuva" title="Kultaniitty" loading="lazy">
           <h3>Kultaniitty r.y.</h3>
-          <p>A small website for the care home with html and css</p><div class="align-right">2006</div>
+          <p>Website for the care home</p><div class="align-right">2006</div>
         </div>
 
         <div class="project-card" 
-          data-title="Assisted Relocation in Finland" data-text="Another small website for association"
+          data-title="Assisted Relocation in Finland" data-text="Another small website for association. This project was a great opportunity to apply my web development skills and create a user-friendly website for the association's needs."
           data-img="img/relocation.jpg">
           <img src="img/relocation.jpg" alt="Projektikuva" title="Assisted Relocation in Finland" loading="lazy">
           <h3>Relocation in Finland</h3>
-          <p>Another small website for association</p><div class="align-right">2007</div>
+          <p>Website for small business</p><div class="align-right">2007</div>
         </div>
 
         <div class="project-card" 
-          data-title="Taipale" data-text="A small website for the care home with html and css"
+          data-title="Taipale" data-text="Refeshing my skills and learning new tools by creating a fictional website for a camp center. This project was a great way to practice modern web development techniques and create a visually appealing and functional website."
           data-img="img/taipale.png">
           <img src="img/taipale.png" alt="Projektikuva" title="Taipale" loading="lazy">
           <h3>Leirikeskus Taipale</h3>
@@ -169,11 +168,19 @@
         </div>
 
         <div class="project-card" 
-          data-title="Bootstrap sivu" data-text="A small website for the care home with html and css"
+          data-title="Bootstrap sivu" data-text="Learning Bootstrap framework by creating a fictional website. This project was a great way to practice using Bootstrap's grid system, components, and utilities to create a responsive and visually appealing website."
           data-img="img/bootstrap.png">
           <img src="img/bootstrap.png" alt="Projektikuva" title="Bootstrap sivu" loading="lazy">
-          <h3>Bootstrap harjoitus</h3>
+          <h3>Bootstrap page</h3>
           <p>A fictional website project.</p><div class="align-right">2025</div>
+        </div>
+
+        <div class="project-card" 
+          data-title="MVC model" data-text="Learning MVC model by creating a fictional website. This project was a great way to practice using the MVC architecture to create a well-structured and maintainable web application connected to a database."
+          data-img="img/mvc-review-code.png">
+          <img src="img/mvc-review.png" alt="Projektikuva" title="Bootstrap sivu" loading="lazy">
+          <h3>MVC model</h3>
+          <p>A fictional website project.</p><div class="align-right">2026</div>
         </div>
       </div>
     </section>
@@ -236,7 +243,7 @@
   <div class="modal-overlay" data-close></div>
 
   <div class="modal-content">
-    <button class="modal-close" aria-label="Close" data-close>&times;</button>
+    <button type="button" class="modal-close" aria-label="Close" data-close>&times;</button>
 
     <img id="modalImage" src="" alt="">
     <h3 id="modalTitle"></h3>
