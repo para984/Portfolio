@@ -224,6 +224,19 @@ body {
   margin-top: 15px;
 }
 
+a {
+  text-decoration: underline;
+  color: inherit;
+}
+a:visited {
+  color: inherit;
+}
+a:hover {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+
 /* Tablet */
 @media (min-width: 600px) {
   .projects {
