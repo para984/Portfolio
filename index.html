@@ -7,7 +7,7 @@
   <meta name="author" content="Pasi Rantanen">
   <meta name="description" content="Portfolio of Pasi Rantanen - Developer and IT specialist">
 
-  <title>Pasi Rantanen | Portfolio</title>
+  <title>Pasi Rantanen | Portfolio &amp; Projects</title>
 
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="effect.css">
@@ -48,10 +48,11 @@
 <!-- ##### Header ##### -->
 <header class="header">
   <div class="header-content">
-    <h1>Pasi Rantanen</h1>
+    <span class="header-eyebrow">Portfolio &amp; Projects</span>
+    <h1>Pasi <span class="accent-name">Rantanen</span></h1>
     
     <p class="header-intro">
-      Software Developer • IT Student • Problem Solver
+      Junior Software Developer • IT Student • Problem Solver
     </p>
 
     <div class="header-tags">
@@ -146,7 +147,7 @@
       <div class="projects">
         <div class="project-card" 
           data-title="Tampereen Jalkapalloklubi" data-text="This project included everything from design to developement. HTML, CSS and PHP were used to create the website."
-          data-img="img/tjk.jpg">
+          data-img="img/tjk.jpg" data-url="#">
           <img src="img/tjk.jpg" alt="Projektikuva" title="Tampereen Jalkapalloklubi" loading="lazy">
           <h3>TJK</h3>
           <p>Website for the football club</p><div class="align-right">2006</div>
@@ -154,7 +155,7 @@
 
         <div class="project-card" 
           data-title="Kultaniitty" data-text="A small website for the care home with html and css. This project was one of my first and it was a great learning experience to create a functional website for a real client."
-          data-img="img/kultaniitty.jpg">
+          data-img="img/kultaniitty.jpg" data-url="#">
           <img src="img/kultaniitty.jpg" alt="Projektikuva" title="Kultaniitty" loading="lazy">
           <h3>Kultaniitty r.y.</h3>
           <p>Website for the care home</p><div class="align-right">2006</div>
@@ -162,7 +163,7 @@
 
         <div class="project-card" 
           data-title="Assisted Relocation in Finland" data-text="Another small website for association. This project was a great opportunity to apply my web development skills and create a user-friendly website for the association's needs."
-          data-img="img/relocation.jpg">
+          data-img="img/relocation.jpg" data-url="#">
           <img src="img/relocation.jpg" alt="Projektikuva" title="Assisted Relocation in Finland" loading="lazy">
           <h3>Relocation in Finland</h3>
           <p>Website for small business</p><div class="align-right">2007</div>
@@ -170,7 +171,7 @@
 
         <div class="project-card" 
           data-title="Taipale" data-text="Refreshing my skills and learning new tools by creating a fictional website for a camp center. This project was a great way to practice modern web development techniques and create a visually appealing and functional website."
-          data-img="img/taipale.png">
+          data-img="img/taipale.png" data-url="https://para984.github.io/taipale/">
           <img src="img/taipale.png" alt="Projektikuva" title="Taipale" loading="lazy">
           <h3>Leirikeskus Taipale</h3>
           <p>A fictional website project.</p><div class="align-right">2025</div>
@@ -178,7 +179,7 @@
 
         <div class="project-card" 
           data-title="Bootstrap sivu" data-text="Learning Bootstrap framework by creating a fictional website. This project was a great way to practice using Bootstrap's grid system, components, and utilities to create a responsive and visually appealing website."
-          data-img="img/bootstrap.png">
+          data-img="img/bootstrap.png" data-url="#">
           <img src="img/bootstrap.png" alt="Projektikuva" title="Bootstrap sivu" loading="lazy">
           <h3>Bootstrap page</h3>
           <p>A fictional website project.</p><div class="align-right">2025</div>
@@ -186,8 +187,8 @@
 
         <div class="project-card" 
           data-title="MVC model" data-text="Learning MVC model by creating a fictional website. This project was a great way to practice using the MVC architecture to create a well-structured and maintainable web application connected to a database."
-          data-img="img/mvc-review-code.png">
-          <img src="img/mvc-review.png" alt="Projektikuva" title="Bootstrap sivu" loading="lazy">
+          data-img="img/mvc-review-code.png" data-url="#">
+          <img src="img/mvc-review.png" alt="Projektikuva" title="MVC model" loading="lazy">
           <h3>MVC model</h3>
           <p>A fictional website project.</p><div class="align-right">2026</div>
         </div>
@@ -257,6 +258,7 @@
     <img id="modalImage" src="" alt="">
     <h3 id="modalTitle"></h3>
     <p id="modalText"></p>
+    <a id="modalLink" class="contact-btn" href="#" target="_blank" rel="noopener noreferrer" hidden>Visit project &rarr;</a>
   </div>
 </div>
 

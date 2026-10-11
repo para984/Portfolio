@@ -2,12 +2,20 @@ const modal = document.getElementById("projectModal");
 const modalTitle = document.getElementById("modalTitle");
 const modalText = document.getElementById("modalText");
 const modalImage = document.getElementById("modalImage");
+const modalLink = document.getElementById("modalLink");
 
 document.querySelectorAll(".project-card").forEach(card => {
   card.addEventListener("click", () => {
     modalTitle.textContent = card.dataset.title;
     modalText.textContent = card.dataset.text;
     modalImage.src = card.dataset.img;
+
+    if (card.dataset.url) {
+      modalLink.href = card.dataset.url;
+      modalLink.hidden = false;
+    } else {
+      modalLink.hidden = true;
+    }
 
     modal.classList.add("active");
     modal.setAttribute("aria-hidden", "false");
